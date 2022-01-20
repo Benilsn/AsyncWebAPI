@@ -1,0 +1,104 @@
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\appsettings.json
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.exe
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.deps.json
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.runtimeconfig.json
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.runtimeconfig.dev.json
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\ref\MyAPI.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.pdb
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.Views.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.Views.pdb
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.csproj.AssemblyReference.cache
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.AssemblyInfoInputs.cache
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.AssemblyInfo.cs
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.csproj.CoreCompileInputs.cache
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.RazorAssemblyInfo.cache
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.RazorAssemblyInfo.cs
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\staticwebassets\MyAPI.StaticWebAssets.Manifest.cache
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\staticwebassets\MyAPI.StaticWebAssets.xml
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\scopedcss\bundle\MyAPI.styles.css
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.TagHelpers.input.cache
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.TagHelpers.output.cache
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.RazorCoreGenerate.cache
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.RazorTargetAssemblyInfo.cache
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.RazorTargetAssemblyInfo.cs
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.Views.pdb
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\ref\MyAPI.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.pdb
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.genruntimeconfig.cache
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.csproj.CopyComplete
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\Google.Protobuf.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\K4os.Compression.LZ4.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\K4os.Hash.xxHash.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\MySql.Data.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\Ubiety.Dns.Core.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\ZstdNet.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\MICRO\source\repos\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Account\Register.cshtml.g.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\appsettings.json
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.exe
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.deps.json
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.runtimeconfig.json
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.runtimeconfig.dev.json
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\ref\MyAPI.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.pdb
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.Views.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\MyAPI.Views.pdb
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\BouncyCastle.Crypto.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\Google.Protobuf.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\K4os.Compression.LZ4.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\K4os.Compression.LZ4.Streams.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\K4os.Hash.xxHash.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\MySql.Data.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\Ubiety.Dns.Core.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\ZstdNet.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\System.Configuration.ConfigurationManager.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.csproj.AssemblyReference.cache
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.AssemblyInfoInputs.cache
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.AssemblyInfo.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.csproj.CoreCompileInputs.cache
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.RazorAssemblyInfo.cache
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.RazorAssemblyInfo.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\staticwebassets\MyAPI.StaticWebAssets.Manifest.cache
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\staticwebassets\MyAPI.StaticWebAssets.xml
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\scopedcss\bundle\MyAPI.styles.css
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.TagHelpers.input.cache
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.TagHelpers.output.cache
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.RazorCoreGenerate.cache
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Account\Register.cshtml.g.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.RazorTargetAssemblyInfo.cache
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.RazorTargetAssemblyInfo.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.Views.pdb
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.csproj.CopyComplete
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\ref\MyAPI.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.pdb
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.genruntimeconfig.cache
