@@ -91,7 +91,6 @@ C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pag
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
-C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.RazorTargetAssemblyInfo.cache
@@ -102,3 +101,4 @@ C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.dll
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\ref\MyAPI.dll
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.pdb
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.genruntimeconfig.cache
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.BrowserLink.dll

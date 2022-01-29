@@ -1,6 +1,58 @@
 ﻿@page
 @model MyAPI.Pages.Account.RegisterModel
 @{
+    ViewData["Title"] = "Register Page";
 }
 
-<h1>Register Page</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="~/css/RegisterPage.css">
+    <script type="text/javascript" src="~/js/Validation.js"></script>
+
+</head>
+
+<body>
+
+    <form name="myForm" onsubmit="return ValidadeAccount()" method="post" action="https://localhost:44318/register" id="register-form">
+
+        <div id="first-register-div">
+
+            <label for="fname">First Name</label><br>
+            <input type="text" id="fname" name="firstName"><br><br>
+
+            <label for="lname">Last Name</label><br>
+            <input type="text" id="lname" name="lastName"><br><br>
+
+            <label for="age">Age</label><br>
+            <input type="text" id="age" name="age"><br><br>
+
+            <label for="email">Email</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <button type="button" id="next" onclick='ValidateInfo()'>Next</button>
+
+        </div>
+
+        <div id="second-register-div">
+
+            <label for="uname">User Name</label><br>
+            <input type="text" id="uname" name="userName"><br><br>
+
+            <label for="pword1">Password</label><br>
+            <input type="password" id="pword1" name="password"><br><br>
+
+            <label for="pword2">Confirm Password</label><br>
+            <input type="password" id="pword2"><br><br>
+
+            <button type="submit">Create</button>
+        </div>
+
+    </form>
+
+</body>
+
+</html>

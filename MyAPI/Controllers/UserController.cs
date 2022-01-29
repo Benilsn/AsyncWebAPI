@@ -1,8 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MyAPI.InputModel;
-using MyAPI.Services;
-using MyAPI.ViewModel;
 using System;
+using MyAPI.Model.Users;
+using MyAPI.Business.Services;
 using System.Threading.Tasks;
 
 namespace MyAPI.Controllers
@@ -17,21 +16,23 @@ namespace MyAPI.Controllers
         [HttpGet("/get")]
         public async Task<ActionResult<UserViewModel>> Get()
         {
+
             var u = await us.Get();
 
             return Ok(u);
         }
 
-        [HttpPost("/post")]
-        public async Task<ActionResult<UserViewModel>> InsertUser([FromBody] UserInputModel userInputModel)
+        [HttpPost("/register")]
+        public async Task<ActionResult<UserViewModel>> InsertUser([FromForm] UserInputModel userInputModel)
         {
             try
             {
                 await Task.Run(() => us.InsertUser(userInputModel));
 
-                return Created("Created!", userInputModel);
+                return Ok();
 
-            }catch (ArgumentNullException e)
+            }
+            catch (ArgumentNullException e)
             {
                 return Problem(e.Message);
             }
