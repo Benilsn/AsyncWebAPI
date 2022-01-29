@@ -1,10 +1,11 @@
-﻿using MySql.Data.MySqlClient;
+﻿using MyAPI.src.Model.Entities.User;
+using MyAPI.src.Model.Repositories.IRepositories;
+using MySql.Data.MySqlClient;
 using System;
-using MyAPI.Business.Entities;
 using System.Threading.Tasks;
-using MyAPI.Business.Repositories;
 
-namespace MyAPI.Data.Repositories
+
+namespace MyAPI.src.Model.Repositories
 {
     public class UserRepository : IUserRepository
     {

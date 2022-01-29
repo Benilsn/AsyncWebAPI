@@ -1,8 +1,8 @@
-﻿using MyAPI.Model.Users;
-using MyAPI.Data.Repositories;
+﻿using MyAPI.src.Model.Entities.User;
+using MyAPI.src.Model.Repositories;
 using System.Threading.Tasks;
 
-namespace MyAPI.Business.Services
+namespace MyAPI.src.Model.Services
 {
     public class UserService
     {

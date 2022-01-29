@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MyAPI.Model.Users
+namespace MyAPI.src.Model.Entities.User
 {
     public class UserInputModel
     {

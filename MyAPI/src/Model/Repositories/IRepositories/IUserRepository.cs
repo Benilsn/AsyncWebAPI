@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using MyAPI.Business.Entities;
+using MyAPI.src.Model.Entities.User;
 
-namespace MyAPI.Business.Repositories
+namespace MyAPI.src.Model.Repositories.IRepositories
 {
     public interface IUserRepository
     {

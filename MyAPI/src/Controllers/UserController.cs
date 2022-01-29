@@ -4,7 +4,7 @@ using MyAPI.Model.Users;
 using MyAPI.Business.Services;
 using System.Threading.Tasks;
 
-namespace MyAPI.Controllers
+namespace MyAPI.src.Controllers
 {
 
     [Route("[controller]")]

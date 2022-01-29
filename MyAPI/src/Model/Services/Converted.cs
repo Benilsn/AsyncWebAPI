@@ -1,7 +1,6 @@
-﻿using MyAPI.Business.Entities;
-using MyAPI.Model.Users;
+﻿using MyAPI.src.Model.Entities.User;
 
-namespace MyAPI.Business.Services
+namespace MyAPI.src.Model.Services
 {
     public static class Converted
     {

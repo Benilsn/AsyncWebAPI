@@ -1,9 +1,9 @@
-﻿namespace MyAPI.Model.Users
+﻿namespace MyAPI.src.Model.Entities.User
 {
-    public class UserViewModel
+    public class User
     {
-        public int Id { get; set; }
 
+        public int Id { get; set; }
         public string FirstName { get; set; }
 
         public string LastName { get; set; }

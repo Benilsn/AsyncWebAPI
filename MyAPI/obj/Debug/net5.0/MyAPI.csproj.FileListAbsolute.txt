@@ -86,13 +86,6 @@ C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\scopedcss
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.TagHelpers.input.cache
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.TagHelpers.output.cache
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.RazorCoreGenerate.cache
-C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Account\Register.cshtml.g.cs
-C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Error.cshtml.g.cs
-C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Index.cshtml.g.cs
-C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Privacy.cshtml.g.cs
-C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\Shared\_Layout.cshtml.g.cs
-C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\_ViewImports.cshtml.g.cs
-C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\Pages\_ViewStart.cshtml.g.cs
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.RazorTargetAssemblyInfo.cache
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.RazorTargetAssemblyInfo.cs
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.Views.pdb
@@ -102,3 +95,10 @@ C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\ref\MyAPI
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.pdb
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\MyAPI.genruntimeconfig.cache
 C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.BrowserLink.dll
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\src\View\Account\Register.cshtml.g.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\src\View\Error.cshtml.g.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\src\View\Index.cshtml.g.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\src\View\Privacy.cshtml.g.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\src\View\Shared\_Layout.cshtml.g.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\src\View\_ViewImports.cshtml.g.cs
+C:\Users\MICRO\OneDrive\Área de Trabalho\MyAPI\MyAPI\obj\Debug\net5.0\Razor\src\View\_ViewStart.cshtml.g.cs
