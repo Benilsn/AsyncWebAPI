@@ -1,7 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using MyAPI.src.Model.Entities.User;
+using MyAPI.src.Model.Services;
 using System;
-using MyAPI.Model.Users;
-using MyAPI.Business.Services;
 using System.Threading.Tasks;
 
 namespace MyAPI.src.Controllers
@@ -23,13 +23,13 @@ namespace MyAPI.src.Controllers
         }
 
         [HttpPost("/register")]
-        public async Task<ActionResult<UserViewModel>> InsertUser([FromForm] UserInputModel userInputModel)
+        public async Task<ActionResult> InsertUser(UserInputModel userInputModel)
         {
             try
             {
                 await Task.Run(() => us.InsertUser(userInputModel));
 
-                return Ok();
+                return RedirectToPage("Index");
 
             }
             catch (ArgumentNullException e)

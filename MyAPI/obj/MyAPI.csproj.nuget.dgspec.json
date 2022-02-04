@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\MICRO\\OneDrive\\Área de Trabalho\\MyAPI\\MyAPI\\MyAPI.csproj": {}
+    "C:\\Users\\MICRO\\OneDrive\\Área de Trabalho\\AsyncWebAPI\\MyAPI\\MyAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\MICRO\\OneDrive\\Área de Trabalho\\MyAPI\\MyAPI\\MyAPI.csproj": {
+    "C:\\Users\\MICRO\\OneDrive\\Área de Trabalho\\AsyncWebAPI\\MyAPI\\MyAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\MICRO\\OneDrive\\Área de Trabalho\\MyAPI\\MyAPI\\MyAPI.csproj",
+        "projectUniqueName": "C:\\Users\\MICRO\\OneDrive\\Área de Trabalho\\AsyncWebAPI\\MyAPI\\MyAPI.csproj",
         "projectName": "MyAPI",
-        "projectPath": "C:\\Users\\MICRO\\OneDrive\\Área de Trabalho\\MyAPI\\MyAPI\\MyAPI.csproj",
+        "projectPath": "C:\\Users\\MICRO\\OneDrive\\Área de Trabalho\\AsyncWebAPI\\MyAPI\\MyAPI.csproj",
         "packagesPath": "C:\\Users\\MICRO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\MICRO\\OneDrive\\Área de Trabalho\\MyAPI\\MyAPI\\obj\\",
+        "outputPath": "C:\\Users\\MICRO\\OneDrive\\Área de Trabalho\\AsyncWebAPI\\MyAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

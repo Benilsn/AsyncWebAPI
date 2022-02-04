@@ -1,0 +1,45 @@
+﻿@page
+@model MyAPI.src.Views.RegisterModel
+@{
+    ViewData["Title"] = "Register Page";
+}
+
+<body>
+
+    <form name="myForm" onsubmit="return ValidateAccount()" method="post">
+
+        <div id="first-register-div">
+
+            <label for="firstName">First Name</label><br>
+            <input id="firstName" name="firstName" asp-for="userInputModel.FirstName"><br><br>
+
+            <label for="lastName">Last Name</label><br>
+            <input id="lastName" name="lastName" asp-for="userInputModel.LastName"><br><br>
+
+            <label for="age">Age</label><br>
+            <input id="age" name="age" type="text" asp-for="userInputModel.Age"><br><br>
+
+            <label for="email">Email</label><br>
+            <input id="email" name="email" asp-for="userInputModel.Email"><br><br>
+
+            <button type="button" id="next" onclick="ValidateInfo()">Next</button>
+
+        </div>
+
+        <div id="second-register-div">
+
+            <label for="userName">User Name</label><br>
+            <input id="userName"  name="userName" asp-for="userInputModel.Username"><br><br>
+
+            <label for="password">Password</label><br>
+            <input id="password" name="password" type="password" asp-for="userInputModel.Password"><br><br>
+
+            <label for="pword2">Confirm Password</label><br>
+            <input type="password" name="password2" id="pword2"><br><br>
+
+            <button type="submit">Create</button>
+        </div>
+
+    </form>
+
+</body>

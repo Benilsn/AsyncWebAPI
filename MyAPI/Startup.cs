@@ -20,7 +20,7 @@ namespace MyAPI
         {
             services.AddMvc().AddRazorPagesOptions(options =>
             {
-                options.RootDirectory = "/src/View";
+                options.RootDirectory = "/src/Views";
             });
         }
 

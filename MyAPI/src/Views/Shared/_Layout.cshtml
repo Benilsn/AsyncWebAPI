@@ -4,7 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/Main.css">
-    <script type="text/javascript" src="../wwwroot/js/Validation.js"></script>
+
+    <link rel="stylesheet" href="~/css/RegisterPage.css" />
+    <script type="text/javascript" src="~/js/Validation.js"></script>
+
     <title>@ViewData["Title"] - MyAPI</title>
 
 </head>
@@ -16,16 +19,16 @@
                 <div>
                     <ul>
                         <li>
-                            <a  asp-area="" asp-page="/Index">Home</a>
+                            <a asp-page="/Index">Home</a>
                         </li>
                         <li >
-                            <a asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a asp-page="/Privacy">Privacy</a>
                         </li>
                         <li>
-                            <a  asp-area="" asp-page="/Account/Register">Register</a>
+                            <a asp-page="/Account/Register">Register</a>
                         </li>
                         <li >
-                            <a asp-area="" asp-page="/Index">Login</a>
+                            <a asp-page="/Index">Login</a>
                         </li>
                     </ul>
                 </div>

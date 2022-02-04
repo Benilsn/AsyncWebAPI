@@ -34,11 +34,12 @@ function ValidateInfo() {
 
 // Function to validate user account settings;
 
-function ValidadeAccount() {
+function ValidateAccount() {
+    alert("Woking!")
 
     var uname = document.myForm.userName.value;
     var pword1 = document.myForm.password.value;
-    var pword2 = document.myForm.pword2.value;
+    var pword2 = document.myForm.password2.value;
 
     if (uname == "" || pword1 == "") {
         alert("Empty fields!")
@@ -55,6 +56,8 @@ function ValidadeAccount() {
     } else if (pword1.length < 5) {
         alert("Password must have at least 5 chacteres!")
         return false;
+    } else {
+        alert("Account Created!")
     }
 
 }

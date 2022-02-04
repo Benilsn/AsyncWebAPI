@@ -1,5 +1,5 @@
-﻿using System.Threading.Tasks;
-using MyAPI.src.Model.Entities.User;
+﻿using MyAPI.src.Model.Entities.User;
+using System.Threading.Tasks;
 
 namespace MyAPI.src.Model.Repositories.IRepositories
 {
