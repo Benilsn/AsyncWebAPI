@@ -12,16 +12,19 @@ namespace MyAPI.src.Model.Repositories
         private readonly MySqlConnection db = new MySqlConnection
         ("Server=localhost;Database=users;Uid=reykon;Pwd=19535313");
 
-        public async Task<User> Get()
+        public User Get(string userEmail, string userName)
         {
             using (MySqlCommand cmd = new MySqlCommand())
             {
-                cmd.CommandText = "SELECT * FROM registers WHERE userId = 2";
+                cmd.CommandText =
+               "SELECT userName, email FROM registers where userName = @userName || email = @email";
 
                 try
                 {
                     cmd.Connection = db;
-                    await db.OpenAsync();
+                    cmd.Parameters.AddWithValue("@email", userEmail);
+                    cmd.Parameters.AddWithValue("@userName", userName);
+                    db.OpenAsync();
 
                     using MySqlDataReader dr = cmd.ExecuteReader();
                     {
@@ -31,13 +34,8 @@ namespace MyAPI.src.Model.Repositories
 
                             dr.Read();
 
-                            u.Id = dr.GetInt32(dr.GetOrdinal("userId"));
-                            u.FirstName = dr.GetString(dr.GetOrdinal("firstName"));
-                            u.LastName = dr.GetString(dr.GetOrdinal("lastName"));
-                            u.Age = dr.GetInt32(dr.GetOrdinal("age"));
                             u.Email = dr.GetString(dr.GetOrdinal("email"));
                             u.Username = dr.GetString(dr.GetOrdinal("userName"));
-                            u.Password = dr.GetString(dr.GetOrdinal("password"));
 
                             return u;
                         }
@@ -50,7 +48,7 @@ namespace MyAPI.src.Model.Repositories
                 }
                 finally
                 {
-                    await db.CloseAsync();
+                    db.CloseAsync();
                 }
                 return null;
             }

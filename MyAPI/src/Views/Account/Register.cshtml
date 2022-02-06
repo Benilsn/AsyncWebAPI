@@ -1,41 +1,49 @@
 ﻿@page
 @model MyAPI.src.Views.RegisterModel
+
+@section RegisterStatic {
+
+    <link rel="stylesheet" href="~/css/RegisterPage.css">
+    <script type="text/javascript" src="~/js/Validation.js"></script>
+}
+
 @{
     ViewData["Title"] = "Register Page";
 }
 
 <body>
 
-    <form name="myForm" onsubmit="return ValidateAccount()" method="post">
+    <form name="myForm" method="post">
 
         <div id="first-register-div">
 
-            <label for="firstName">First Name</label><br>
-            <input id="firstName" name="firstName" asp-for="userInputModel.FirstName"><br><br>
+            <label asp-for="User.FirstName">First Name</label><br>
+            <input asp-for="User.FirstName"><br>
+            <span asp-validation-for="User.FirstName"></span><br><br>
 
-            <label for="lastName">Last Name</label><br>
-            <input id="lastName" name="lastName" asp-for="userInputModel.LastName"><br><br>
+            <label asp-for="User.LastName">Last Name</label><br>
+            <input asp-for="User.LastName"><br>
+            <span asp-validation-for="User.LastName"></span><br><br>
 
-            <label for="age">Age</label><br>
-            <input id="age" name="age" type="text" asp-for="userInputModel.Age"><br><br>
+            <label asp-for="User.Age">Age</label><br>
+            <input type="text" asp-for="User.Age"><br>
+            <span asp-validation-for="User.Age"></span><br><br>
 
-            <label for="email">Email</label><br>
-            <input id="email" name="email" asp-for="userInputModel.Email"><br><br>
+            <label asp-for="User.Email">Email</label><br>
+            <input asp-for="User.Email"><br>
+            <span asp-validation-for="User.Email"></span><br><br>         
 
-            <button type="button" id="next" onclick="ValidateInfo()">Next</button>
+            <label asp-for="User.Username">User Name</label><br>
+            <input asp-for="User.Username"><br>
+            <span asp-validation-for="User.Username"></span><br><br>
 
-        </div>
+            <label asp-for="User.Password">Password</label><br>
+            <input type="password" asp-for="User.Password"><br>
+            <span asp-validation-for="User.Password"></span><br><br>
 
-        <div id="second-register-div">
-
-            <label for="userName">User Name</label><br>
-            <input id="userName"  name="userName" asp-for="userInputModel.Username"><br><br>
-
-            <label for="password">Password</label><br>
-            <input id="password" name="password" type="password" asp-for="userInputModel.Password"><br><br>
-
-            <label for="pword2">Confirm Password</label><br>
-            <input type="password" name="password2" id="pword2"><br><br>
+            <label asp-for="User.Confirm_Password">Confirm Password</label><br>
+            <input type="password" asp-for="User.Confirm_Password"><br><br>
+            <span asp-validation-for="User.Confirm_Password"></span><br><br>
 
             <button type="submit">Create</button>
         </div>

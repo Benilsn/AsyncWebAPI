@@ -21,6 +21,7 @@ namespace MyAPI
             services.AddMvc().AddRazorPagesOptions(options =>
             {
                 options.RootDirectory = "/src/Views";
+
             });
         }
 

@@ -9,10 +9,18 @@ namespace MyAPI.src.Model.Services
 
         private readonly UserRepository ur = new UserRepository();
 
-        public async Task<UserViewModel> Get()
+        public bool Exists(string userEmail, string userName)
         {
-            var user = await ur.Get();
-            return Converted.Convert(user);
+            var user = ur.Get(userEmail, userName);
+
+            if (user == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
         }
 
         public async Task InsertUser(UserInputModel userInputModel)

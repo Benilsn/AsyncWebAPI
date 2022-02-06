@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/Main.css">
 
-    <link rel="stylesheet" href="~/css/RegisterPage.css" />
-    <script type="text/javascript" src="~/js/Validation.js"></script>
+    @RenderSection("RegisterStatic", required: false)
 
     <title>@ViewData["Title"] - MyAPI</title>
 
@@ -14,29 +13,25 @@
 <body>
     <header>
         <nav>
-            <div >
-                <a asp-area="" asp-page="/Index">MyAPI</a>      
-                <div>
-                    <ul>
-                        <li>
-                            <a asp-page="/Index">Home</a>
-                        </li>
-                        <li >
-                            <a asp-page="/Privacy">Privacy</a>
-                        </li>
-                        <li>
-                            <a asp-page="/Account/Register">Register</a>
-                        </li>
-                        <li >
-                            <a asp-page="/Index">Login</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+            <a asp-area="" asp-page="/Index">MyAPI</a>
+            <ul>
+                <li>
+                    <a asp-page="/Index">Home</a>
+                </li>
+                <li>
+                    <a asp-page="/Privacy">Privacy</a>
+                </li>
+                <li>
+                    <a asp-page="/Account/Register">Register</a>
+                </li>
+                <li>
+                    <a asp-page="/Index">Login</a>
+                </li>
+            </ul>
         </nav>
     </header>
-    <div >
-        <main role="main" >
+    <div>
+        <main role="main">
             @RenderBody()
         </main>
     </div>
@@ -46,7 +41,5 @@
             &copy; 2022 - MyAPI - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
-
-    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

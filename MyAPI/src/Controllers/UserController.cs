@@ -14,12 +14,12 @@ namespace MyAPI.src.Controllers
         private readonly UserService us = new UserService();
 
         [HttpGet("/get")]
-        public async Task<ActionResult<UserViewModel>> Get()
+        public JsonResult Exists(string userEmail, string userName)
         {
 
-            var u = await us.Get();
+            var u = us.Exists(userEmail, userName);
 
-            return Ok(u);
+            return Json(u);
         }
 
         [HttpPost("/register")]
@@ -36,6 +36,11 @@ namespace MyAPI.src.Controllers
             {
                 return Problem(e.Message);
             }
+        }
+
+        public void UserExists(string userEmail, string userName)
+        {
+
         }
     }
 }

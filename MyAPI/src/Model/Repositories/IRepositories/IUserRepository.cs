@@ -5,7 +5,7 @@ namespace MyAPI.src.Model.Repositories.IRepositories
 {
     public interface IUserRepository
     {
-        Task<User> Get();
+        User Get(string userEmail, string userName);
 
         Task InsertUser(User u);
 

@@ -10,36 +10,40 @@ namespace MyAPI.src.Views
     {
 
         [BindProperty]
-        public UserInputModel userInputModel { get; set; }
-        private readonly UserController uc = new UserController();
+        public new UserInputModel User { get; set; }
+
+        public UserController Controller = new UserController();
 
 
         public void OnGet()
         {
+
         }
 
-        public ActionResult OnPost()
+        public async Task<ActionResult> OnPostAsync()
         {
-            var firstname = Request.Form["firstName"];
-            var lastname = Request.Form["lastName"];
-            var age = Request.Form["age"];
-            var email = Request.Form["email"];
-            var username = Request.Form["userName"];
-            var password = Request.Form["password"];
-            var password2 = Request.Form["password2"];
-
-            /*await uc.InsertUser(new UserInputModel
+            if (ModelState.IsValid)
             {
-                FirstName = firstname,
-                LastName = lastname,
-                Age = int.Parse(age),
-                Email = email,
-                Username = username,
-                Password = password
-            }) ;*/
+                /*if (Controller.Exists(User.Email, User.Username))
+                {
+                    return Page();
+                }
+                else
+                {*/
 
-            return Content("Not Working!");
+                    await Controller.InsertUser(User);
+
+                    return RedirectToPage("/Index");
+               // }
+            }
+            else
+            {
+                return Page();
+            }
+
         }
 
     }
+
 }
+
