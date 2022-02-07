@@ -17,24 +17,25 @@ namespace MyAPI.src.Views
 
         public void OnGet()
         {
-
+            
         }
+
 
         public async Task<ActionResult> OnPostAsync()
         {
             if (ModelState.IsValid)
             {
-                /*if (Controller.Exists(User.Email, User.Username))
+                if (Controller.IsEmailInUse(User.Email))
                 {
-                    return Page();
-                }
+                    return Controller.NoContent();
+;                }
                 else
-                {*/
+                {
 
                     await Controller.InsertUser(User);
 
                     return RedirectToPage("/Index");
-               // }
+                }
             }
             else
             {

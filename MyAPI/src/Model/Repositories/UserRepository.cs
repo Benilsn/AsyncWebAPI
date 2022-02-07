@@ -12,17 +12,57 @@ namespace MyAPI.src.Model.Repositories
         private readonly MySqlConnection db = new MySqlConnection
         ("Server=localhost;Database=users;Uid=reykon;Pwd=19535313");
 
-        public User Get(string userEmail, string userName)
+
+        public string GetByEmail(string userEmail)
         {
             using (MySqlCommand cmd = new MySqlCommand())
             {
                 cmd.CommandText =
-               "SELECT userName, email FROM registers where userName = @userName || email = @email";
+               "SELECT email FROM registers where email = @email";
 
                 try
                 {
                     cmd.Connection = db;
                     cmd.Parameters.AddWithValue("@email", userEmail);
+                    db.OpenAsync();
+
+                    using MySqlDataReader dr = cmd.ExecuteReader();
+                    {
+                        if (dr.HasRows)
+                        {
+                            string email;
+
+                            dr.Read();
+
+                            email = dr.GetString(dr.GetOrdinal("email"));
+
+                            return email;
+                        }
+                    }
+                }
+
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+                finally
+                {
+                    db.CloseAsync();
+                }
+                return null;
+            }
+        }
+
+        public string GetByUserName(string userName)
+        {
+            using (MySqlCommand cmd = new MySqlCommand())
+            {
+                cmd.CommandText =
+               "SELECT userName FROM registers where userName = @userName";
+
+                try
+                {
+                    cmd.Connection = db;
                     cmd.Parameters.AddWithValue("@userName", userName);
                     db.OpenAsync();
 
@@ -30,14 +70,13 @@ namespace MyAPI.src.Model.Repositories
                     {
                         if (dr.HasRows)
                         {
-                            User u = new User();
+                            string name;
 
                             dr.Read();
 
-                            u.Email = dr.GetString(dr.GetOrdinal("email"));
-                            u.Username = dr.GetString(dr.GetOrdinal("userName"));
+                            name = dr.GetString(dr.GetOrdinal("userName"));
 
-                            return u;
+                            return name;
                         }
                     }
                 }

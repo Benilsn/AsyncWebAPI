@@ -23,8 +23,8 @@ namespace MyAPI.src.Model.Entities.User
 
 
         [Required]
-        [Remote(action:"Exists", controller:"User", ErrorMessage = "User Already Exist!")]
-        [DataType(DataType.EmailAddress)]
+        [EmailAddress]
+        [Remote(action: "IsEmailInUse", controller:"User")]  
         public string Email { get; set; }
 
         [Required]

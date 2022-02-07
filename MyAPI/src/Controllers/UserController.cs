@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MyAPI.src.Model.Entities.User;
 using MyAPI.src.Model.Services;
 using System;
@@ -13,14 +14,6 @@ namespace MyAPI.src.Controllers
     {
         private readonly UserService us = new UserService();
 
-        [HttpGet("/get")]
-        public JsonResult Exists(string userEmail, string userName)
-        {
-
-            var u = us.Exists(userEmail, userName);
-
-            return Json(u);
-        }
 
         [HttpPost("/register")]
         public async Task<ActionResult> InsertUser(UserInputModel userInputModel)
@@ -38,9 +31,26 @@ namespace MyAPI.src.Controllers
             }
         }
 
-        public void UserExists(string userEmail, string userName)
+        [AcceptVerbs("Post","Get")]
+        public bool IsEmailInUse(string userEmail)
+        {
+            var email = us.IsEmailInUse(userEmail);
+
+            if (email.Result)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        /*[AcceptVerbs("Post", "Get")]]
+
+        public async Task<ActionResult> IsUserNameInUse(string userName)
         {
 
-        }
+        }*/
     }
 }

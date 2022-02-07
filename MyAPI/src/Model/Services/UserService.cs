@@ -9,11 +9,26 @@ namespace MyAPI.src.Model.Services
 
         private readonly UserRepository ur = new UserRepository();
 
-        public bool Exists(string userEmail, string userName)
+        public async Task<bool> IsEmailInUse(string userEmail)
         {
-            var user = ur.Get(userEmail, userName);
+            var email = await Task.Run(() => ur.GetByEmail(userEmail));
+            
 
-            if (user == null)
+            if (email == null)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public async Task<bool> IsUserNameInUse(string userName)
+        {
+            var uname = await Task.Run(() => ur.GetByEmail(userName));
+
+            if (uname == null)
             {
                 return false;
             }
