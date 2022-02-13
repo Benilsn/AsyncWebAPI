@@ -31,7 +31,7 @@ namespace MyAPI
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
-                app.UseBrowserLink();
+
             }
             else
             {
@@ -44,7 +44,6 @@ namespace MyAPI
             app.UseStaticFiles();
 
             app.UseRouting();
-            app.UseBrowserLink();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

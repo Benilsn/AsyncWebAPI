@@ -1,4 +1,4 @@
-﻿using Microsoft.AspNetCore.Authorization;
+﻿
 using Microsoft.AspNetCore.Mvc;
 using MyAPI.src.Model.Entities.User;
 using MyAPI.src.Model.Services;
@@ -31,26 +31,21 @@ namespace MyAPI.src.Controllers
             }
         }
 
-        [AcceptVerbs("Post","Get")]
-        public bool IsEmailInUse(string userEmail)
-        {
-            var email = us.IsEmailInUse(userEmail);
 
-            if (email.Result)
+        [AcceptVerbs("Post", "Get")]
+        public async Task<ActionResult> IsEmailInUse([Bind(Prefix = "User.Email")] string userEmail)
+        {
+            var email = await us.IsEmailInUse(userEmail);
+
+            if (email)
             {
-                return true;
+                return Json(true);
             }
             else
             {
-                return false;
+                return Json(false);
             }
         }
 
-        /*[AcceptVerbs("Post", "Get")]]
-
-        public async Task<ActionResult> IsUserNameInUse(string userName)
-        {
-
-        }*/
     }
 }

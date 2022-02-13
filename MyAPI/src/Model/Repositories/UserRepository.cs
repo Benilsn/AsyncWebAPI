@@ -53,46 +53,6 @@ namespace MyAPI.src.Model.Repositories
             }
         }
 
-        public string GetByUserName(string userName)
-        {
-            using (MySqlCommand cmd = new MySqlCommand())
-            {
-                cmd.CommandText =
-               "SELECT userName FROM registers where userName = @userName";
-
-                try
-                {
-                    cmd.Connection = db;
-                    cmd.Parameters.AddWithValue("@userName", userName);
-                    db.OpenAsync();
-
-                    using MySqlDataReader dr = cmd.ExecuteReader();
-                    {
-                        if (dr.HasRows)
-                        {
-                            string name;
-
-                            dr.Read();
-
-                            name = dr.GetString(dr.GetOrdinal("userName"));
-
-                            return name;
-                        }
-                    }
-                }
-
-                catch (Exception e)
-                {
-                    Console.WriteLine(e.Message);
-                }
-                finally
-                {
-                    db.CloseAsync();
-                }
-                return null;
-            }
-        }
-
         public async Task InsertUser(User u)
         {
             using (MySqlCommand cmd = new MySqlCommand())
@@ -114,6 +74,10 @@ namespace MyAPI.src.Model.Repositories
                     await db.OpenAsync();
                     cmd.ExecuteNonQuery();
 
+                }
+                catch (NullReferenceException e)
+                {
+                    Console.WriteLine(e.Message);
                 }
                 catch (Exception e)
                 {

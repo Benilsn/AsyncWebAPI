@@ -143,7 +143,6 @@ C:\Users\MICRO\OneDrive\Área de Trabalho\AsyncWebAPI\MyAPI\bin\Debug\net5.0\Goo
 C:\Users\MICRO\OneDrive\Área de Trabalho\AsyncWebAPI\MyAPI\bin\Debug\net5.0\K4os.Compression.LZ4.dll
 C:\Users\MICRO\OneDrive\Área de Trabalho\AsyncWebAPI\MyAPI\bin\Debug\net5.0\K4os.Compression.LZ4.Streams.dll
 C:\Users\MICRO\OneDrive\Área de Trabalho\AsyncWebAPI\MyAPI\bin\Debug\net5.0\K4os.Hash.xxHash.dll
-C:\Users\MICRO\OneDrive\Área de Trabalho\AsyncWebAPI\MyAPI\bin\Debug\net5.0\Microsoft.VisualStudio.Web.BrowserLink.dll
 C:\Users\MICRO\OneDrive\Área de Trabalho\AsyncWebAPI\MyAPI\bin\Debug\net5.0\MySql.Data.dll
 C:\Users\MICRO\OneDrive\Área de Trabalho\AsyncWebAPI\MyAPI\bin\Debug\net5.0\Ubiety.Dns.Core.dll
 C:\Users\MICRO\OneDrive\Área de Trabalho\AsyncWebAPI\MyAPI\bin\Debug\net5.0\ZstdNet.dll

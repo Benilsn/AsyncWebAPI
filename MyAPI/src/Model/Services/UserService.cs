@@ -12,7 +12,7 @@ namespace MyAPI.src.Model.Services
         public async Task<bool> IsEmailInUse(string userEmail)
         {
             var email = await Task.Run(() => ur.GetByEmail(userEmail));
-            
+
 
             if (email == null)
             {
@@ -21,20 +21,6 @@ namespace MyAPI.src.Model.Services
             else
             {
                 return false;
-            }
-        }
-
-        public async Task<bool> IsUserNameInUse(string userName)
-        {
-            var uname = await Task.Run(() => ur.GetByEmail(userName));
-
-            if (uname == null)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
             }
         }
 
