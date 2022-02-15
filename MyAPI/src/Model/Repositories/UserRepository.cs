@@ -57,8 +57,8 @@ namespace MyAPI.src.Model.Repositories
         {
             using (MySqlCommand cmd = new MySqlCommand())
             {
-                cmd.CommandText = "INSERT INTO registers (firstName, lastName, age, email, userName, password)" +
-                                  " VALUES (@firstName, @lastName, @age, @email, @userName, @password)";
+                cmd.CommandText = "INSERT INTO registers (firstName, lastName, age, email, password)" +
+                                  " VALUES (@firstName, @lastName, @age, @email, @password)";
 
                 try
                 {
@@ -68,7 +68,6 @@ namespace MyAPI.src.Model.Repositories
                     cmd.Parameters.AddWithValue("@lastName", u.LastName);
                     cmd.Parameters.AddWithValue("@age", u.Age);
                     cmd.Parameters.AddWithValue("@email", u.Email);
-                    cmd.Parameters.AddWithValue("@userName", u.Username);
                     cmd.Parameters.AddWithValue("@password", u.Password);
 
                     await db.OpenAsync();
