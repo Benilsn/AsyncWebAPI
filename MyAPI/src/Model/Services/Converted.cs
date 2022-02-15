@@ -12,7 +12,6 @@ namespace MyAPI.src.Model.Services
                 LastName = user.LastName,
                 Age = user.Age,
                 Email = user.Email,
-                Username = user.Username,
                 Password = user.Password
             };
             return userViewModel;
@@ -26,7 +25,6 @@ namespace MyAPI.src.Model.Services
                 LastName = userInputModel.LastName,
                 Age = userInputModel.Age,
                 Email = userInputModel.Email,
-                Username = userInputModel.Username,
                 Password = userInputModel.Password
             };
             return user;

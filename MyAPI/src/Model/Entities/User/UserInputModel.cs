@@ -28,11 +28,6 @@ namespace MyAPI.src.Model.Entities.User
         public string Email { get; set; }
 
         [Required]
-        [StringLength(100, MinimumLength = 3, ErrorMessage = "Username must have at least 3 characteres.")]
-        //[Remote(controller:"User", action: "ValidataInput", ErrorMessage = "Username already regitered!")]
-        public string Username { get; set; }
-
-        [Required]
         [DataType(DataType.Password)]
         [Compare("Confirm_Password", ErrorMessage = "Password must match!")]
         [StringLength(100, MinimumLength = 5, ErrorMessage = "Password must have at least 5 characteres.")]
