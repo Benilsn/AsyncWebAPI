@@ -1,4 +1,6 @@
-﻿namespace MyAPI.src.Model.Entities.User
+﻿using MyAPI.src.Model.Services.Password;
+
+namespace MyAPI.src.Model.Entities.User
 {
     public class User
     {
@@ -12,6 +14,9 @@
 
         public string Email { get; set; }
 
-        public string Password { get; set; }
+        public HashSalt Hash { get; set; }
+
+
+
     }
 }

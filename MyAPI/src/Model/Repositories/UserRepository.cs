@@ -1,5 +1,6 @@
 ﻿using MyAPI.src.Model.Entities.User;
 using MyAPI.src.Model.Repositories.IRepositories;
+using MyAPI.src.Model.Services.Password;
 using MySql.Data.MySqlClient;
 using System;
 using System.Threading.Tasks;
@@ -13,7 +14,7 @@ namespace MyAPI.src.Model.Repositories
         ("Server=localhost;Database=users;Uid=reykon;Pwd=19535313");
 
 
-        public string GetByEmail(string userEmail)
+        public async Task<string> GetByEmail(string userEmail)
         {
             using (MySqlCommand cmd = new MySqlCommand())
             {
@@ -24,7 +25,7 @@ namespace MyAPI.src.Model.Repositories
                 {
                     cmd.Connection = db;
                     cmd.Parameters.AddWithValue("@email", userEmail);
-                    db.OpenAsync();
+                    await db.OpenAsync();
 
                     using MySqlDataReader dr = cmd.ExecuteReader();
                     {
@@ -47,18 +48,59 @@ namespace MyAPI.src.Model.Repositories
                 }
                 finally
                 {
-                    db.CloseAsync();
+                    await db.CloseAsync();
                 }
                 return null;
             }
         }
 
-        public async Task InsertUser(User u)
+        public async Task<HashSalt> CheckPassword(string userEmail)
         {
             using (MySqlCommand cmd = new MySqlCommand())
             {
-                cmd.CommandText = "INSERT INTO registers (firstName, lastName, age, email, password)" +
-                                  " VALUES (@firstName, @lastName, @age, @email, @password)";
+                cmd.CommandText =
+               "SELECT hash, salt FROM registers where email = @email";
+
+                try
+                {
+                    cmd.Connection = db;
+                    cmd.Parameters.AddWithValue("@email", userEmail);
+                    await db.OpenAsync();
+
+                    using MySqlDataReader dr = cmd.ExecuteReader();
+                    {
+                        if (dr.HasRows)
+                        {
+                            HashSalt hash = new HashSalt();
+
+                            dr.Read();
+
+                            hash.Hash = dr.GetString(dr.GetOrdinal("hash"));
+                            hash.Salt = dr.GetString(dr.GetOrdinal("salt"));
+
+                            return hash;
+                        }
+                    }
+                }
+
+                catch (Exception e)
+                {
+                    Console.WriteLine(e.Message);
+                }
+                finally
+                {
+                    await db.CloseAsync();
+                }
+                return null;
+            }
+        }
+
+        public async Task InsertUser(User u, HashSalt hash)
+        {
+            using (MySqlCommand cmd = new MySqlCommand())
+            {
+                cmd.CommandText = "INSERT INTO registers (firstName, lastName, age, email, hash, salt)" +
+                                  " VALUES (@firstName, @lastName, @age, @email, @hash, @salt)";
 
                 try
                 {
@@ -68,7 +110,8 @@ namespace MyAPI.src.Model.Repositories
                     cmd.Parameters.AddWithValue("@lastName", u.LastName);
                     cmd.Parameters.AddWithValue("@age", u.Age);
                     cmd.Parameters.AddWithValue("@email", u.Email);
-                    cmd.Parameters.AddWithValue("@password", u.Password);
+                    cmd.Parameters.AddWithValue("@hash", hash.Hash);
+                    cmd.Parameters.AddWithValue("@salt", hash.Salt);
 
                     await db.OpenAsync();
                     cmd.ExecuteNonQuery();

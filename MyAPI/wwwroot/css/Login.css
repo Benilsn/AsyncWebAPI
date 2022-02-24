@@ -1,46 +1,45 @@
-div.register-page {
+﻿.login-page {
     z-index: -1;
     position: absolute;
     left: 20%;
-    top: 8em;
-    width: 30em;
-    height: 32em;
+    top: 10em;
+    width: 28em;
+    height: 20em;
     border: 1px solid rgb(108, 221, 108);
     background-color: rgba(174, 180, 171, 0.4);
 }
 
-h2.register {
+h2.login {
     font-size: 1.4em;
     position: absolute;
-    left: 35%;
+    left: 42%;
     text-decoration: underline;
 }
 
 form {
     position: absolute;
-    margin: 5em 5%;
+    margin: 6em 6%;
 }
 
 label.form-item {
     display: flex;
     justify-content: right;
-    margin: 0.2em;
 }
 
-    label.form-item input {
-        font-size: 1em;
-        width: 15em;
-        margin-left: 1em;
-    }
+label input {
+    font-size: 1em;
+    width: 15em;
+    margin-left: 1em;
+}
 
-.register-btn {
+.login-btn {
     height: 30px;
     width: 80px;
-    transform: translate(15em, 0.5em);
+    transform: translate(12em, 1em);
     letter-spacing: 1px;
 }
 
-    .register-btn:hover {
+    .login-btn:hover {
         transition: 0.3s;
         color: white;
         background-color: rgb(69, 70, 69);
@@ -48,12 +47,12 @@ label.form-item {
         -webkit-box-shadow: 0 3px 10px 0 rgb(236, 240, 233);
     }
 
-.login-link {
+.register-link {
     position: absolute;
-    transform: translate(4em, 4em);
+    transform: translate(3em, 5em);
 }
 
-    .login-link a {
-        color: yellow;
+    .register-link a {
         padding-left: 0.5em;
+        color: yellow;
     }

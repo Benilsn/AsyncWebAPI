@@ -1,14 +1,14 @@
 ﻿using MyAPI.src.Model.Entities.User;
+using MyAPI.src.Model.Services.Password;
 using System.Threading.Tasks;
 
 namespace MyAPI.src.Model.Repositories.IRepositories
 {
     public interface IUserRepository
     {
-        string GetByEmail(string userEmail);
-        //Task<string> GetByUserName(string userName);
+        Task<string> GetByEmail(string userEmail);
 
-        Task InsertUser(User u);
+        Task InsertUser(User u, HashSalt hash);
 
     }
 }

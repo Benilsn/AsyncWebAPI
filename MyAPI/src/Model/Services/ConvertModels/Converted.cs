@@ -1,6 +1,6 @@
 ﻿using MyAPI.src.Model.Entities.User;
 
-namespace MyAPI.src.Model.Services
+namespace MyAPI.src.Model.Services.ConvertModels
 {
     public static class Converted
     {
@@ -11,8 +11,8 @@ namespace MyAPI.src.Model.Services
                 FirstName = user.FirstName,
                 LastName = user.LastName,
                 Age = user.Age,
-                Email = user.Email,
-                Password = user.Password
+                Email = user.Email
+
             };
             return userViewModel;
         }
@@ -25,7 +25,7 @@ namespace MyAPI.src.Model.Services
                 LastName = userInputModel.LastName,
                 Age = userInputModel.Age,
                 Email = userInputModel.Email,
-                Password = userInputModel.Password
+
             };
             return user;
         }

@@ -154,3 +154,4 @@ C:\Users\MICRO\OneDrive\Área de Trabalho\AsyncWebAPI\MyAPI\obj\Debug\net5.0\MyA
 C:\Users\MICRO\OneDrive\Área de Trabalho\AsyncWebAPI\MyAPI\obj\Debug\net5.0\MyAPI.genruntimeconfig.cache
 C:\Users\MICRO\OneDrive\Área de Trabalho\AsyncWebAPI\MyAPI\obj\Debug\net5.0\Razor\src\Views\Account\Register.cshtml.g.cs
 C:\Users\MICRO\OneDrive\Área de Trabalho\AsyncWebAPI\MyAPI\bin\Debug\net5.0\libman.json
+C:\Users\MICRO\OneDrive\Área de Trabalho\AsyncWebAPI\MyAPI\obj\Debug\net5.0\Razor\src\Views\Account\Login.cshtml.g.cs

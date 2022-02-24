@@ -4,3 +4,148 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1em;
 }
+
+/*  BODY   */
+
+body {
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    background-color: grey;
+    height: 3.5em;
+    width: 95%;
+    padding-left: 1em;
+}
+
+ul {
+    background-color: black;
+}
+
+label.hide-menu {
+    display: none;
+}
+
+div.container {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 10em;
+    width: 40%;
+    height: 50%;
+    background-color: rgb(167, 158, 158);
+}
+
+.menu-img {
+    float: left;
+    width: 50px;
+    cursor: pointer;
+    display: none;
+}
+
+.side-menu {
+    position: relative;
+    z-index: 1;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+    input[type="checkbox"]:checked ~ .hide-list {
+        display: block;
+    }
+
+
+/*  -- NAVBARS STYLES --   */
+
+.nav-item {
+    padding-left: 1em;
+}
+
+.nav-link {
+    padding-left: 0.3em;
+    text-decoration: none;
+    font-size: 1.4em;
+    color: rgb(137, 223, 9);
+}
+
+a.nav-link:hover {
+    color: white;
+    box-shadow: 5px 10px;
+    -moz-box-align: stretch;
+    -webkit-box-shadow: 0 3px 15px 0 rgb(236, 240, 233);
+}
+
+
+/* - MAIN-LIST -*/
+
+ul.main-list li {
+    display: inline;
+}
+
+
+/* HIDE-LIST */
+
+ul.hide-list {
+    background-color: rgb(12, 10, 10);
+    position: absolute;
+    top: 3.6em;
+    left: 2.5%;
+    list-style: none;
+    height: 6em;
+    width: 10em;
+    display: none;
+    border: 1px solid green;
+}
+
+
+/*  FOOTER   */
+
+footer {
+    background-color: rgb(12, 11, 11);
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 95%;
+}
+
+    footer h3 {
+        display: inline;
+        color: rgb(10, 105, 39);
+    }
+
+.footer a {
+    text-decoration: none;
+    color: rgb(202, 192, 50);
+}
+
+
+/*   MEDIAS   */
+
+@media (max-width:1200px) {
+    .footer {
+        display: none;
+    }
+
+    div.container {
+        display: none;
+    }
+}
+
+@media (max-width:500px) {
+    label.hide-menu {
+        position: inherit;
+        z-index: 1;
+        margin: 0.5em;
+        display: block;
+    }
+
+    ul.main-list li {
+        display: none;
+    }
+}

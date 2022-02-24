@@ -2,37 +2,56 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/Main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
     <script src="~/lib/jquery/jquery.js"></script>
     <script src="~/lib/jquery-validate/jquery.validate.js"></script>
     <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
 
-    @RenderSection("RegisterStatic", required: false)
+    <asp:ContentPlaceHolder ID="Stylesheets" runat="server">
+        <link href="~/css/Main.css" rel="stylesheet" type="text/css" media="screen" runat="server" />
+        @RenderSection("LoginStyles", required: false);
+        @RenderSection("RegisterStyles", required: false);
+    </asp:ContentPlaceHolder>
+
+    
+
 
     <title>@ViewData["Title"] - MyAPI</title>
 
 </head>
 <body>
-    <header>
-        <nav>
-            <a asp-area="" asp-page="/Index">MyAPI</a>
-            <ul>
-                <li>
-                    <a asp-page="/Index">Home</a>
-                </li>
-                <li>
-                    <a asp-page="/Privacy">Privacy</a>
-                </li>
-                <li>
-                    <a asp-page="/Account/Register">Register</a>
-                </li>
-                <li>
-                    <a asp-page="/Index">Login</a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+
+    <nav>
+        <input class="side-menu" type="checkbox" id="check">
+        <label class="hide-menu" for="check">
+            <img class="menu-img" src="~/img/list.png">
+        </label>
+
+        <ul class="main-list">
+            <li class="nav-item">
+                <a class="nav-link" asp-page="/Index">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-page="/Account/Register">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-page="/Account/Login">Login</a>
+            </li>
+        </ul>
+
+        <ul class="hide-list">
+            <li class="nav-item">
+                <a class="nav-link" asp-page="/Index">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-page="/Account/Register">Register</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-page="/Account/Login">Login</a>
+            </li>
+        </ul>
+    </nav>
+
     <div>
         <main role="main">
             @RenderBody()
